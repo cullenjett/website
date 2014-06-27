@@ -1,0 +1,72 @@
+.jumbotron
+  .container
+    .row
+      / .col-sm-5.pull-right
+      /   %img.img-responsive(src="/ruby-logo.png")
+      %h1.col-sm-6 Cullen Jett
+      %h2.col-sm-12 Web Developer
+      
+.bottom-border
+  .container
+    .row
+      .logo-p.col-xs-8
+        %span
+          %img.denver-logo(src="denver-logo.png")
+        Denver, CO
+      / .logo-p.col-xs-4.text-right.pull-right
+      /   %span
+      /     %img.ruby-logo(src="plain-ruby-logo.png")
+      /   Ruby on Rails 
+
+
+.container
+  .row.body-row
+    .col-sm-8
+      %h3.about-header About Me
+      .row
+        .col-md-12
+          %p.about-body I am a <span class="red-color">Ruby on Rails</span> developer from Denver, CO. A "bootcamp" graduate with   practical experience creating web applications from scratch, I have worked with web development subjects and technologie  s   like ActiveRecord relationships, authentication from scratch, version control using Git, and practicing test driven   development using Rspec. I am currently <span class="red-color">available for hire</span> as a junior developer.
+        .row
+          .col-sm-4.col-sm-offset-4
+            %img.img-responsive.hidden-xs.about-img(src="ruby-logo.png")
+        / .col-sm-4.hidden-md.hidden-lg.hidden-xl
+        /   %img.img-responsive.hidden-xs.about-img(src="ruby-logo.png")      
+
+    .col-sm-3.col-sm-offset-1
+      %h3.hidden-xs.resume-header My Resume
+      %img.img-responsive.center-block.hidden-xs.resume-img(src="/resume.png")
+      %p.hidden-xs.resume-body Find a detailed description of my information, knowledge, and the work I have done. 
+      = link_to page_path("resume") do
+        View my resume
+        %span.glyphicon.glyphicon-arrow-right
+
+  .row.body-row
+    .col-sm-12
+      %h3.about-header Recent Work
+    .row
+      .col-sm-6.col-sm-offset-0.col-xs-8.col-xs-offset-2
+        %img.img-responsive.center-block(src="/postit.png")
+        .well  
+          %h3.project-title Postit!
+          %ul.features
+            %li Create, edit, comment, and vote on posts
+            %li Authentication from scratch
+            %li Organize posts by category
+            %li View and edit user profiles
+            %li User roles allow admins to edit all posts
+            %li Slugs as URLs
+            %li Display time based on user specified time zone
+            %li Deployed to Heroku
+            %li Uses custom gems to extract common logic
+            %li 2-factor authentication using Twilio
+
+      .col-sm-6.col-sm-offset-0.col-xs-8.col-xs-offset-2
+        %img.img-responsive.center-block(src="/blackjack.png")
+        .well  
+          %h3.project-title Blackjack
+          %ul.features
+            %li Built using Sinatra framework
+            %li Uses cookie as persistance layer
+            %li AJAX-ified actions
+            %li Twitter Bootstrap
+

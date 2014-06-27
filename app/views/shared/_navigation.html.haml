@@ -1,0 +1,25 @@
+%nav.navbar.navbar-default.navbar-fixed-top.navbar-shadow{role: "navigation"}
+  .container-fluid
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      / %a.navbar-brand{href: "#"} LOGO
+      = link_to page_path('home') do
+        %img.navbar-brand(src="/cj-logo.png")
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          = link_to "View my GitHub", "https://github.com/cullenjett?tab=repositories"
+
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %p.navbar-text
+            %span.glyphicon.glyphicon-envelope
+            cullenjett@gmail.com
+    / /.navbar-collapse
+  / /.container-fluid

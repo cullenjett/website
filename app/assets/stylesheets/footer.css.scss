@@ -1,0 +1,40 @@
+.footer-body {
+  color: #777777;
+  padding: 20px 0;
+}
+
+.bold-text {
+  color: black;
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.blue-color {
+  font-family: "Droid Serif";
+  color: #06ECE2
+}
+
+.red-color {
+  font-family: "Droid Serif";
+  color: #dc423b;
+}
+
+.pullfix {
+  float: right;
+}
+
+
+// MEDIA QUERIES \\
+
+
+@media screen and (max-width: 768px) {
+  .pullfix {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-body {
+    padding: 5px 0;
+  }
+}

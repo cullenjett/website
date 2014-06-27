@@ -1,0 +1,132 @@
+.jumbotron {
+  background-image: 
+    linear-gradient(rgba(6, 236, 226, 0.7), rgba(6, 236, 226, 0.7)),
+    url('/backgrounds/wood-floor.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  padding: 150px 0 225px 0;
+  min-height: 420px;
+  height: 100%;
+  margin: 0;
+}
+
+.jumbotron-bg {
+  background: rgba(0, 0, 0, 0.25);
+  border: 2px solid green;
+}
+
+.jumbotron h1 {
+  // text-align: center;
+  // width: 420px;
+  color: black;
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px 3%;
+  // margin-top: 10%;
+}
+
+.jumbotron h2 {
+  font-family: "Droid Serif";
+  color: #06ECE2;
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px 3%;
+}
+
+.bottom-border {
+  background-color: black;
+  border-bottom: 1.5px solid #777777;
+}
+
+.logo-p {
+  color: white;
+  margin: 0 4.3%;
+  margin: 0;
+  padding: 3px 0;
+}
+
+.body-row {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.denver-logo {
+  max-width: 100%;
+  width: 75px;
+  margin-right: 3px;
+}
+
+.ruby-logo {
+  max-width: 100%;
+  width: 35px;
+  padding-top: 2px;
+  margin-right: 5px;
+}
+
+.about-header {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.about-body {
+  font-size: 18px;
+  line-height: 35px;
+  font-family: "Droid Serif";
+}
+
+.about-img {
+  margin-top: 30px;
+}
+
+.resume-header {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.resume-body {
+  font-size: 14px;
+  font-family: "Droid Serif";
+}
+
+.resume-img {
+  border: 1px solid #bbbbbb;
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  text-align: center;
+  color: #06ECE2;
+  border-bottom: 1px solid #bbbbbb;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.features {
+  font-family: "Droid Serif";
+  color: #777777;
+  
+  li {
+    // margin-top: 10px;
+    line-height: 25px;
+  }
+}
+
+
+// MEDIA QUERIES \\
+
+
+@media screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 5em;
+    text-align: center;
+  }
+
+  .jumbotron h2 {
+    text-align: center;
+  }
+}
