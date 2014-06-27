@@ -121,8 +121,13 @@
 
 
 @media screen and (max-width: 768px) {
+  .jumbotron {
+    padding: 100px 0;
+    min-height: 300px;
+  }
+
   .jumbotron h1 {
-    font-size: 5em;
+    font-size: 4em;
     text-align: center;
   }
 
