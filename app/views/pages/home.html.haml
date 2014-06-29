@@ -18,7 +18,6 @@
       /     %img.ruby-logo(src="plain-ruby-logo.png")
       /   Ruby on Rails 
 
-
 .container
   .row.body-row
     .col-sm-8
@@ -32,9 +31,10 @@
         / .col-sm-4.hidden-md.hidden-lg.hidden-xl
         /   %img.img-responsive.hidden-xs.about-img(src="ruby-logo.png")      
 
-    .col-sm-3.col-sm-offset-1
+    .resume.col-sm-3.col-sm-offset-1
       %h3.hidden-xs.resume-header My Resume
-      %img.img-responsive.center-block.hidden-xs.resume-img(src="/resume.png")
+      = link_to page_path("resume") do
+        %img.img-responsive.center-block.hidden-xs.resume-img(src="/resume.png")
       %p.hidden-xs.resume-body Find a detailed description of my information, knowledge, and the work I have done. 
       = link_to page_path("resume") do
         View my resume
@@ -45,7 +45,8 @@
       %h3.about-header Recent Work
     .row
       .col-sm-6.col-sm-offset-0.col-xs-10.col-xs-offset-1
-        %img.img-responsive.center-block(src="/postit.png")
+        = link_to "https://cullenjett-postit.herokuapp.com" do
+          %img.img-responsive.center-block(src="/postit.png")
         .well  
           %h3.project-title Postit!
           %ul.features
@@ -59,9 +60,11 @@
             %li Deployed to Heroku
             %li Uses custom gems to extract common logic
             %li 2-factor authentication using Twilio
+            %li Deployed to Heroku
 
       .col-sm-6.col-sm-offset-0.col-xs-10.col-xs-offset-1
-        %img.img-responsive.center-block(src="/blackjack.png")
+        = link_to "https://cullenjett-blackjack.herokuapp.com" do
+          %img.img-responsive.center-block(src="/blackjack.png")
         .well  
           %h3.project-title Blackjack
           %ul.features
@@ -69,4 +72,5 @@
             %li Uses cookie as persistance layer
             %li AJAX-ified actions
             %li Twitter Bootstrap
+            %li Deployed to Heroku
 
