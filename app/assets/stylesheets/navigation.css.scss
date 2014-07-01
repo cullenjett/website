@@ -32,6 +32,20 @@ nav {
   margin-right: 50px;
 
   span {
+    position: relative;
+    top: 2.5px;
+  }
+
+  a {
+    color: #777777;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: darken(#777777, 15%);
+  }
+
+  span {
     margin-right: 10px;
   }
 }
