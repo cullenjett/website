@@ -25,14 +25,8 @@
 
     .resume.col-sm-3.col-sm-offset-1
       %h3.hidden-xs.resume-header My Resume
-      
-
-      .overlay  
-        = link_to page_path("resume"), id: "resume" do
-          %img.img-responsive.center-block.hidden-xs.resume-img(src="/cullen-jett-resume.png")
-      
-
-
+      = link_to page_path("resume"), id: "resume" do
+        %img.img-responsive.center-block.hidden-xs.resume-img(src="/cullen-jett-resume.png")
       %p.hidden-xs.resume-body Find a detailed description of my information, knowledge, and the work I have done. 
       = link_to page_path("resume") do
         View my resume
@@ -46,7 +40,8 @@
         = link_to "https://cullenjett-postit.herokuapp.com" do
           %img.img-responsive.center-block(src="/postit.png")
         .well  
-          %h3.project-title Postit!
+          %h3.project-title 
+            = link_to "Postit!", "https://cullenjett-postit.herokuapp.com"
           %ul.features
             %li Built using Rails 4
             %li Create, edit, comment, and vote on posts
@@ -65,7 +60,8 @@
         = link_to "https://cullenjett-blackjack.herokuapp.com" do
           %img.img-responsive.center-block(src="/blackjack.png")
         .well  
-          %h3.project-title Blackjack
+          %h3.project-title
+            = link_to "Blackjack", "https://cullenjett-blackjack.herokuapp.com"
           %ul.features
             %li Built using Sinatra framework
             %li Uses cookie as persistance layer

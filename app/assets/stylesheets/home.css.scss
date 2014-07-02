@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .jumbotron {
   background-image: 
     linear-gradient(rgba(6, 236, 226, 0.7), rgba(6, 236, 226, 0.7)),
@@ -79,6 +83,7 @@
 
 .resume a {
   font-size: 1.2em;
+  text-decoration: none;
 }
 
 .resume-header {
@@ -106,6 +111,10 @@
   padding-bottom: 10px;
   margin-bottom: 20px;
   margin-top: 0px;
+}
+
+.well a {
+  text-decoration: none;
 }
 
 .features {
