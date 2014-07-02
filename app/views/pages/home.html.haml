@@ -9,7 +9,7 @@
     .row
       .logo-p.col-xs-8
         %span
-          %img.denver-logo(src="denver-logo.png")
+          %img.denver-logo(src="denver-logo.png" alt="Denver, CO")
         Denver, CO
 
 .container
@@ -21,12 +21,12 @@
           %p.about-body I'm a <span class="red-color">Ruby on Rails</span> developer from Denver, CO. A "bootcamp" graduate with   practical experience creating web applications from scratch, I have worked with web development subjects and technologies like ActiveRecord relationships, authentication from scratch, version control using Git, and practicing test driven   development using Rspec. I am currently <span class="red-color">available for hire</span> as a junior developer.
         .row
           .col-sm-4.col-sm-offset-4
-            %img.img-responsive.hidden-xs.about-img(src="ruby-logo.png")     
+            %img.img-responsive.hidden-xs.about-img(src="ruby-logo.png" alt="Cullen Jett | Ruby on Rails Developer")     
 
     .resume.col-sm-3.col-sm-offset-1
       %h3.hidden-xs.resume-header My Resume
       = link_to page_path("resume"), id: "resume" do
-        %img.img-responsive.center-block.hidden-xs.resume-img(src="/cullen-jett-resume.png")
+        %img.img-responsive.center-block.hidden-xs.resume-img(src="/cullen-jett-resume.png" alt="Cullen Jett | Resume")
       %p.hidden-xs.resume-body Find a detailed description of my information, knowledge, and the work I have done. 
       = link_to page_path("resume") do
         View my resume
@@ -38,7 +38,7 @@
     .row
       .col-sm-6.col-sm-offset-0.col-xs-10.col-xs-offset-1
         = link_to "https://cullenjett-postit.herokuapp.com" do
-          %img.img-responsive.center-block(src="/postit.png")
+          %img.img-responsive.center-block(src="/postit.png" alt="Postit! | Ruby on Rails project")
         .well  
           %h3.project-title 
             = link_to "Postit!", "https://cullenjett-postit.herokuapp.com"
@@ -58,7 +58,7 @@
 
       .col-sm-6.col-sm-offset-0.col-xs-10.col-xs-offset-1
         = link_to "https://cullenjett-blackjack.herokuapp.com" do
-          %img.img-responsive.center-block(src="/blackjack.png")
+          %img.img-responsive.center-block(src="/blackjack.png" alt="Blackjack | Ruby on Rails project")
         .well  
           %h3.project-title
             = link_to "Blackjack", "https://cullenjett-blackjack.herokuapp.com"
