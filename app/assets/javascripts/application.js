@@ -19,29 +19,8 @@
 
 // $(document).ready(function() {
 //   $('#resume').on('mouseover', function() {
-//     $(this).animate({"width": "110%", "right": "100px"}, 200, "swing");
+//     $(this).animate({"width": "105%", "right": "-100px"}, 200, "swing");
 //   }).mouseout(function() {
 //     $(this).animate({"width": "100%", "left": "10px"}, 200, "swing");
 //   });;
 // });
-
-$(function(){
-    $('.navbar').data('size','big');
-});
-
-$(window).scroll(function(){
-    var $nav = $('.navbar');
-    if ($('body').scrollTop() > 0) {
-        if ($nav.data('size') == 'big') {
-            $nav.data('size','small').stop().animate({
-                height:'40px'
-            }, 600);
-        }
-    } else {
-        if ($nav.data('size') == 'small') {
-            $nav.data('size','big').stop().animate({
-                height:'80px'
-            }, 600);
-        }  
-    }
-});

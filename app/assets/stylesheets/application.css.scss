@@ -14,16 +14,13 @@
  *= require_tree .
 */
 
-@media screen and (max-width: 768px) {
-  $navbar-height: 60px;
-}
 
 $font-family-sans-serif: "Open Sans";
 $font-family-serif: "Droid Serif";
 
 $link-color: #06ECE2;
 
-$navbar-height: 80px;
+$navbar-height: 60px;
 $navbar-default-bg: rgba(255, 255, 255, 0.95);
 
 @import "bootstrap";
