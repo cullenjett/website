@@ -6,16 +6,13 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'bootstrap-sass'
 
-group :doc do
-  gem 'sdoc', '~> 0.4.0', require: false
-end
+gem 'thin'
 
 group :development do
   gem 'quiet_assets'
@@ -27,8 +24,3 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
-
-
-
-
-
