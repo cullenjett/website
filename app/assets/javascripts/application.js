@@ -14,12 +14,3 @@
 //= require jquery_ujs
 //= require_tree .
 //= require bootstrap
-
-
-// $(document).ready(function() {
-//   $('#resume').on('mouseover', function() {
-//     $(this).animate({"width": "105%", "right": "-100px"}, 200, "swing");
-//   }).mouseout(function() {
-//     $(this).animate({"width": "100%", "left": "10px"}, 200, "swing");
-//   });;
-// });
