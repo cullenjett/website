@@ -38,9 +38,9 @@
     .row
       .col-sm-4.col-sm-offset-0.col-xs-10.col-xs-offset-1.lead-project
         = link_to "http://cullenjett-myflix.herokuapp.com" do
-          %img.img-responsive.center-block(src="/myflix.png" alt="MyFlix | Ruby on Rails project")
+          %img.img-responsive.center-block.myflixImage(src="/myflix.png" alt="MyFlix | Ruby on Rails project")
 
-        .well
+        .well.screen-hidden.myflix-description
           %h3.project-title MyFlix
           %p.text-center.under-construction (under construction)
           %ul.features
@@ -62,8 +62,8 @@
 
       .col-sm-4.col-sm-offset-0.col-xs-10.col-xs-offset-1
         = link_to "https://cullenjett-postit.herokuapp.com" do
-          %img.img-responsive.center-block(src="/postit.png" alt="Postit! | Ruby on Rails project")
-        .well
+          %img.img-responsive.center-block.postitImage(src="/postit.png" alt="Postit! | Ruby on Rails project")
+        .well.screen-hidden.postit-description
           %h3.project-title Postit
           %ul.features
             %li Built using Rails 4
@@ -81,8 +81,8 @@
 
       .col-sm-4.col-sm-offset-0.col-xs-10.col-xs-offset-1
         = link_to "https://cullenjett-blackjack.herokuapp.com" do
-          %img.img-responsive.center-block(src="/blackjack.png" alt="Blackjack | Ruby on Rails project")
-        .well
+          %img.img-responsive.center-block.blackjackImage(src="/blackjack.png" alt="Blackjack | Ruby on Rails project")
+        .well.screen-hidden.blackjack-description
           %h3.project-title Blackjack
           %ul.features
             %li Built using Sinatra framework

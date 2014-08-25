@@ -105,6 +105,10 @@ a {
   margin-bottom: 30px;
 }
 
+.screen-hidden {
+  display: none;
+}
+
 .project-title {
   text-align: center;
   color: #06ECE2;
@@ -126,7 +130,7 @@ a {
 }
 
 .features {
-  display: none;
+  // display: none;
   font-family: "Droid Serif";
   color: #777777;
 
@@ -156,5 +160,9 @@ a {
 
   .about-body {
     margin-bottom: 25px;
+  }
+
+  .project-description {
+    display: inline;
   }
 }

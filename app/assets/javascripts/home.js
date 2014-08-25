@@ -4,14 +4,30 @@
 //   });
 // });
 
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 
 $(window).scroll(function() {
   var height = $(window).scrollTop();
 
-  if (height > 1225) {
-    $('.features').slideDown(750);
+  if (height < 750) {
+    $('.myflix-description').slideUp();
+    $('.postit-description').slideUp();
+    $('.blackjack-description').slideUp();
   }
-  else if (height < 1225) {
-    $('.features').slideUp();
+});
+
+$(document).ready(function() {
+  if (!isMobile) {
+    $('.myflixImage').on('mouseenter', this, function() {
+      $('.myflix-description').slideDown();
+    });
+
+    $('.postitImage').on('mouseenter', this, function() {
+      $('.postit-description').slideDown();
+    });
+
+    $('.blackjackImage').on('mouseenter', this, function() {
+      $('.blackjack-description').slideDown();
+    });
   }
-})
+});
