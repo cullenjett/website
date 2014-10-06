@@ -27,6 +27,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.3.6)
     arel (5.0.1.20140414130214)
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
@@ -43,6 +44,8 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.2.0)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
     haml (4.0.5)
       tilt
     haml-rails (0.5.3)
@@ -68,6 +71,9 @@ GEM
     mime-types (1.25.1)
     minitest (5.3.4)
     multi_json (1.10.1)
+    multipart-post (2.0.0)
+    octokit (3.4.0)
+      sawyer (~> 0.5.3)
     pg (0.17.1)
     polyglot (0.3.5)
     pry (0.9.12.6)
@@ -107,6 +113,9 @@ GEM
       sass (~> 3.2.0)
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
+    sawyer (0.5.5)
+      addressable (~> 2.3.5)
+      faraday (~> 0.8, < 0.10)
     slop (3.5.0)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -148,6 +157,7 @@ DEPENDENCIES
   high_voltage
   jbuilder (~> 2.0)
   jquery-rails
+  octokit
   pg
   pry
   quiet_assets

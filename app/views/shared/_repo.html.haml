@@ -1,0 +1,10 @@
+.col-sm-3
+  .panel.panel-default
+    .panel-heading
+      %h3= repo.name
+    .panel-body
+      %p= repo.description
+      %p= repo.url
+    .panel-footer
+      %p= "Last commit: #{repo.commit_message}"
+      %p= "on #{repo.commit_date}."

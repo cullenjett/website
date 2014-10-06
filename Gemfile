@@ -14,6 +14,8 @@ gem 'bootstrap-sass'
 
 gem 'thin'
 
+gem 'octokit'
+
 group :development do
   gem 'quiet_assets'
   gem 'pry'

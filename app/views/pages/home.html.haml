@@ -90,3 +90,9 @@
             %li AJAX-ified actions
             %li Twitter Bootstrap
             %li Deployed to Heroku
+
+    -# .row.body-row
+    -#   .col-sm-3
+    .row.body-row
+      - @repos.each do |repo|
+        = render 'shared/repo', repo: repo
