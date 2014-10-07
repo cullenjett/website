@@ -11,10 +11,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'bootstrap-sass'
+gem 'masonry-rails'
 
 gem 'thin'
 
 gem 'octokit'
+
 
 group :development do
   gem 'quiet_assets'

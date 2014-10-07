@@ -1,10 +1,8 @@
-.col-sm-3
-  .panel.panel-default
-    .panel-heading
-      %h3= repo.name
-    .panel-body
-      %p= repo.description
-      %p= repo.url
-    .panel-footer
-      %p= "Last commit: #{repo.commit_message}"
-      %p= "on #{repo.commit_date}."
+.box.panel.panel-default
+  = link_to (image_tag "https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"), "#"
+  .panel-body
+    %h2= link_to repo.name, repo.url
+    %p.user
+    Last Commit:
+    = repo.commit_message
+    %span= "on #{repo.commit_date}"

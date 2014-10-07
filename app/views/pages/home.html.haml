@@ -58,8 +58,6 @@
             %li Uses Stripe to accept credit card payments
             %li Twitter Bootstrap
 
-
-
       .col-sm-4.col-sm-offset-0.col-xs-10.col-xs-offset-1
         = link_to "https://cullenjett-postit.herokuapp.com" do
           %img.img-responsive.center-block.postitImage(src="/postit.png" alt="Postit! | Ruby on Rails project")
@@ -91,8 +89,6 @@
             %li Twitter Bootstrap
             %li Deployed to Heroku
 
-    -# .row.body-row
-    -#   .col-sm-3
-    .row.body-row
-      - @repos.each do |repo|
-        = render 'shared/repo', repo: repo
+#repos.transitions-enabled
+  - @repos.each do |repo|
+    = render 'shared/repo', repo: repo
