@@ -89,6 +89,8 @@
             %li Twitter Bootstrap
             %li Deployed to Heroku
 
-#repos.transitions-enabled
-  - @repos.each do |repo|
-    = render 'shared/repo', repo: repo
+  .body-row
+    %h3.about-header GitHub Repos
+    #repos.transitions-enabled
+      - @repos.each do |repo|
+        = render 'shared/repo', repo: repo
