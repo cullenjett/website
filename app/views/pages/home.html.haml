@@ -13,81 +13,81 @@
         Denver, CO
 
 .container
-  -# .row.body-row
-  -#   .col-sm-8
-  -#     %h3.about-header About Me
-  -#     .row
-  -#       .col-md-12
-  -#         %p.about-body I'm a <span class="red-color">Ruby on Rails</span> developer from Denver, CO. A bootcamp graduate with   practical experience creating web applications from scratch, I have worked with web development subjects and technologies like ActiveRecord relationships, authentication from scratch, version control using Git, and practicing test driven   development using Rspec. I am currently <span class="red-color">available for hire</span>.
-  -#       .row
-  -#         .col-sm-4.col-sm-offset-4
-  -#           %img.img-responsive.hidden-xs.about-img(src="ruby-logo.png" alt="Cullen Jett | Ruby on Rails Developer")
-  -#
-  -#   .resume.col-sm-3.col-sm-offset-1
-  -#     %h3.hidden-xs.resume-header My Resume
-  -#     = link_to page_path("resume"), id: "resume" do
-  -#       %img.img-responsive.center-block.hidden-xs.resume-img(src="/resume-sm.png" alt="Cullen Jett | Resume")
-  -#     %p.hidden-xs.resume-body Find a detailed description of my information, knowledge, and the work I have done.
-  -#     = link_to page_path("resume") do
-  -#       View my resume
-  -#       %span.glyphicon.glyphicon-arrow-right
-  -#
-  -# .row.body-row
-  -#   .col-sm-12
-  -#     %h3.about-header Recent Work
-  -#   .row
-  -#     .col-sm-4.col-sm-offset-0.col-xs-10.col-xs-offset-1
-  -#       = link_to "http://cullenjett-myflix.herokuapp.com" do
-  -#         %img.img-responsive.center-block.myflixImage(src="/myflix.png" alt="MyFlix | Ruby on Rails project")
-  -#
-  -#       .well.screen-hidden.myflix-description
-  -#         %h3.project-title MyFlix
-  -#         %p.text-center.under-construction (under construction)
-  -#         %ul.features
-  -#           %li A Netflix clone built w/Rails 4
-  -#           %li Built using TDD (via RSpec and Capybara)
-  -#           %li User authentication built from scratch
-  -#           %li Users can comment and leave reviews on individual videos
-  -#           %li “My Queue” function so users can store videos in a personal queue
-  -#           %li Follow other users and see their video reviews and queue
-  -#           %li Automated email generation for new users, password resets, and friend invites
-  -#           %li Background processing w/Sidekiq
-  -#           %li Simple deployment pipeline
-  -#           %li Admin users can upload videos (file upload feature built using CarrierWave)
-  -#           %li Amazon S3 used to store video images uploaded by admin
-  -#           %li Uses Stripe to accept credit card payments
-  -#           %li Twitter Bootstrap
-  -#
-  -#     .col-sm-4.col-sm-offset-0.col-xs-10.col-xs-offset-1
-  -#       = link_to "https://cullenjett-postit.herokuapp.com" do
-  -#         %img.img-responsive.center-block.postitImage(src="/postit.png" alt="Postit! | Ruby on Rails project")
-  -#       .well.screen-hidden.postit-description
-  -#         %h3.project-title Postit
-  -#         %ul.features
-  -#           %li Built using Rails 4
-  -#           %li Create, edit, comment, and vote on posts
-  -#           %li Authentication from scratch
-  -#           %li Organize posts by category
-  -#           %li View and edit user profiles
-  -#           %li User roles allow admins to edit all posts
-  -#           %li Slugs as URLs
-  -#           %li Display time based on user specified time zone
-  -#           %li Deployed to Heroku
-  -#           %li Uses custom gems to extract common logic
-  -#           %li 2-factor authentication using Twilio
-  -#           %li Deployed to Heroku
-  -#
-  -#     .col-sm-4.col-sm-offset-0.col-xs-10.col-xs-offset-1
-  -#       = link_to "https://cullenjett-blackjack.herokuapp.com" do
-  -#         %img.img-responsive.center-block.blackjackImage(src="/blackjack.png" alt="Blackjack | Ruby on Rails project")
-  -#       .well.screen-hidden.blackjack-description
-  -#         %h3.project-title Blackjack
-  -#         %ul.features
-  -#           %li Built using Sinatra framework
-  -#           %li Uses cookie as persistance layer
-  -#           %li AJAX-ified actions
-  -#           %li Twitter Bootstrap
-  -#           %li Deployed to Heroku
+  .row.body-row
+    .col-sm-8
+      %h3.about-header About Me
+      .row
+        .col-md-12
+          %p.about-body I'm a <span class="red-color">Ruby on Rails</span> developer from Denver, CO. A bootcamp graduate with   practical experience creating web applications from scratch, I have worked with web development subjects and technologies like ActiveRecord relationships, authentication from scratch, version control using Git, and practicing test driven   development using Rspec. I am currently <span class="red-color">available for hire</span>.
+        .row
+          .col-sm-4.col-sm-offset-4
+            %img.img-responsive.hidden-xs.about-img(src="ruby-logo.png" alt="Cullen Jett | Ruby on Rails Developer")
+
+    .resume.col-sm-3.col-sm-offset-1
+      %h3.hidden-xs.resume-header My Resume
+      = link_to page_path("resume"), id: "resume" do
+        %img.img-responsive.center-block.hidden-xs.resume-img(src="/resume-sm.png" alt="Cullen Jett | Resume")
+      %p.hidden-xs.resume-body Find a detailed description of my information, knowledge, and the work I have done.
+      = link_to page_path("resume") do
+        View my resume
+        %span.glyphicon.glyphicon-arrow-right
+
+  .row.body-row
+    .col-sm-12
+      %h3.about-header Recent Work
+    .row
+      .col-sm-4.col-sm-offset-0.col-xs-10.col-xs-offset-1
+        = link_to "http://cullenjett-myflix.herokuapp.com" do
+          %img.img-responsive.center-block.myflixImage(src="/myflix.png" alt="MyFlix | Ruby on Rails project")
+
+        .well.screen-hidden.myflix-description
+          %h3.project-title MyFlix
+          %p.text-center.under-construction (under construction)
+          %ul.features
+            %li A Netflix clone built w/Rails 4
+            %li Built using TDD (via RSpec and Capybara)
+            %li User authentication built from scratch
+            %li Users can comment and leave reviews on individual videos
+            %li “My Queue” function so users can store videos in a personal queue
+            %li Follow other users and see their video reviews and queue
+            %li Automated email generation for new users, password resets, and friend invites
+            %li Background processing w/Sidekiq
+            %li Simple deployment pipeline
+            %li Admin users can upload videos (file upload feature built using CarrierWave)
+            %li Amazon S3 used to store video images uploaded by admin
+            %li Uses Stripe to accept credit card payments
+            %li Twitter Bootstrap
+
+      .col-sm-4.col-sm-offset-0.col-xs-10.col-xs-offset-1
+        = link_to "https://cullenjett-postit.herokuapp.com" do
+          %img.img-responsive.center-block.postitImage(src="/postit.png" alt="Postit! | Ruby on Rails project")
+        .well.screen-hidden.postit-description
+          %h3.project-title Postit
+          %ul.features
+            %li Built using Rails 4
+            %li Create, edit, comment, and vote on posts
+            %li Authentication from scratch
+            %li Organize posts by category
+            %li View and edit user profiles
+            %li User roles allow admins to edit all posts
+            %li Slugs as URLs
+            %li Display time based on user specified time zone
+            %li Deployed to Heroku
+            %li Uses custom gems to extract common logic
+            %li 2-factor authentication using Twilio
+            %li Deployed to Heroku
+
+      .col-sm-4.col-sm-offset-0.col-xs-10.col-xs-offset-1
+        = link_to "https://cullenjett-blackjack.herokuapp.com" do
+          %img.img-responsive.center-block.blackjackImage(src="/blackjack.png" alt="Blackjack | Ruby on Rails project")
+        .well.screen-hidden.blackjack-description
+          %h3.project-title Blackjack
+          %ul.features
+            %li Built using Sinatra framework
+            %li Uses cookie as persistance layer
+            %li AJAX-ified actions
+            %li Twitter Bootstrap
+            %li Deployed to Heroku
 
   .body-row
     %h3.about-header GitHub Repos
