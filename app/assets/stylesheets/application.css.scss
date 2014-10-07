@@ -26,6 +26,7 @@ $navbar-default-bg: rgba(255, 255, 255, 0.95);
 
 $btn-default-border: rgba(6, 236, 226, 1);
 
+@import "bootstrap-sprockets";
 @import "bootstrap";
 
 body {
