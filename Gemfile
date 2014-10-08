@@ -16,6 +16,7 @@ gem 'masonry-rails'
 gem 'thin'
 
 gem 'octokit'
+gem 'figaro'
 
 group :development do
   gem 'quiet_assets'

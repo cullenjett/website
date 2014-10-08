@@ -1,5 +1,5 @@
 task 'populate' => :environment do
-  client = Octokit::Client.new(login: 'cullenjett', password: 'condor88')
+  client = Octokit::Client.new(login: ENV['github_login'], password: ENV['github_password'])
   user = client.user
   repos = user.rels[:repos].get.data
 
