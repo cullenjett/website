@@ -21,14 +21,15 @@ $font-family-serif: "Droid Serif";
 
 $link-color: #06ECE2;
 
-$navbar-height: 55px;
+$navbar-height: 70px;
 $navbar-default-bg: rgba(255, 255, 255, 0.95);
+$navbar-margin-bottom: 0;
 
 $btn-default-border: rgba(6, 236, 226, 1);
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
-  padding-top: $navbar-height;
-}
+// body {
+//   padding-top: $navbar-height;
+// }
