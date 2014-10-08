@@ -11,13 +11,14 @@
         %img.img-responsive.navbar-brand(src="/cj-logo.png")
     / Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        %li
-          %a{href: '#about'} About Me
-        %li
-          %a{href: '#work'} Recent Work
-        %li
-          %a{href: '#github'} GitHub Repos
+      - if current_page?(root_path)  
+        %ul.nav.navbar-nav
+          %li
+            %a{href: '#about'} About Me
+          %li
+            %a{href: '#work'} Recent Work
+          %li
+            %a{href: '#github'} GitHub Repos
 
       %ul.nav.navbar-nav.navbar-right
         %li
