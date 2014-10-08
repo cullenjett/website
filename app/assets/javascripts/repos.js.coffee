@@ -7,8 +7,14 @@ $ ->
     $('.box').hover (->
       $(this).stop().animate
         marginTop: '0px',
-        150
+        50, ->
+          $(this).animate
+            marginTop: '2px',
+            100
     ), ->
       $(this).animate
-        marginTop: '10px',
-        100
+        marginTop: '12px',
+        100, ->
+          $(this).animate
+            marginTop: '10px'
+            150
