@@ -15,7 +15,7 @@
 .container
   .row.body-row
     .col-sm-8
-      %h3.about-header About Me
+      %h3#about.about-header About Me
       .row
         .col-md-12
           %p.about-body I'm a <span class="red-color">Ruby on Rails</span> developer from Denver, CO. A bootcamp graduate with   practical experience creating web applications from scratch, I have worked with web development subjects and technologies like ActiveRecord relationships, authentication from scratch, version control using Git, and practicing test driven   development using Rspec. I am currently <span class="red-color">available for hire</span>.
@@ -34,7 +34,7 @@
 
   .row.body-row
     .col-sm-12
-      %h3.about-header Recent Work
+      %h3#work.about-header Recent Work
     .row
       .col-sm-4.col-sm-offset-0.col-xs-10.col-xs-offset-1
         = link_to "http://cullenjett-myflix.herokuapp.com" do
@@ -89,7 +89,7 @@
             %li Deployed to Heroku
 
   .body-row
-    %h3.about-header GitHub Repos
+    %h3#github.about-header GitHub Repos
     #repos.transitions-enabled
       - @repos.each do |repo|
         = render 'repos/repo', repo: repo

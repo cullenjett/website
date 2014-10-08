@@ -7,21 +7,21 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      / %a.navbar-brand{href: "#"} LOGO
       = link_to root_path do
         %img.img-responsive.navbar-brand(src="/cj-logo.png")
     / Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li
-          = link_to "Visit my GitHub", "https://github.com/cullenjett?tab=repositories"
+          %a{href: '#about'} About Me
+        %li
+          %a{href: '#work'} Recent Work
+        %li
+          %a{href: '#github'} GitHub Repos
 
       %ul.nav.navbar-nav.navbar-right
         %li
           .navbar-text
-
             %a(href="mailto:cullenjett@gmail.com")
               %span.glyphicon.glyphicon-envelope
               cullenjett@gmail.com
-    / /.navbar-collapse
-  / /.container-fluid
