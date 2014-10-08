@@ -12,7 +12,8 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:600' rel='stylesheet' type='text/css'>
 
     <link rel="shortcut icon" href="/cj-logo.png"/>
-
+    - if Rails.env.production?
+      = render 'shared/analyitics'
   %body
     = render 'shared/navigation'
     = yield
