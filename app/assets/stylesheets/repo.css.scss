@@ -2,14 +2,18 @@
   margin: 0px auto;
   width: 100%;
   .box {
+    // background: #f5f5f5;
 	  margin: 10px;
-	  width: 250px;
-	  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	  width: 225px;
+	  box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.2);
 	  border-radius: 7px;
 	  text-align: center;
     .img-box {
-      padding-top: 20px;
+      padding-top: 10px;
       width: 100px;
+    }
+    .panel-body {
+      padding-top: 10px;
     }
     img {
 	  	max-width: 100%;
@@ -18,7 +22,8 @@
 	  h2 {
 	  	font-size: 22px;
 	  	margin: 0;
-	  	padding: 10px 10px;
+	  	padding-top: 0;
+      padding-bottom: 15px
 	  }
     .description {
       font-family: "Droid Serif";
@@ -34,7 +39,8 @@
       }
   	  .last-commit {
   	  	border-top: 1px solid #EAEAEA;
-  			padding: 15px;
+  			padding-top: 15px;
+        padding-bottom: 10px;
   			margin: 0;
   	  }
       .date {
