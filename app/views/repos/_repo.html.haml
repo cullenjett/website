@@ -4,6 +4,8 @@
   .panel-body
     %h2= link_to repo.name, repo.url
     %p.description= repo.description
-    %p.user.red-color Last Commit:
-    %p.message= "\"#{repo.commit_message}\""
-    %p.date= repo.commit_date
+    .repo-info
+      %p.last-commit
+        %span.red-color Last Commit:
+        %span.date= print_date(repo.commit_date)
+      %p.message= "\"#{repo.commit_message}\""

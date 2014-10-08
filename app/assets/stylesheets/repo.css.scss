@@ -26,19 +26,27 @@
       margin: 0;
       padding: 15px;
     }
-    .message {
-      font-family: "Droid Serif";
+    .repo-info {
+      font-size: 12px;
       color: #515151;
-    }
-	  .user {
-	  	font-size: 12px;
-	  	border-top: 1px solid #EAEAEA;
-			padding: 15px;
-			margin: 0;
-	  }
-    .date {
-      color: #515151;
-      font-size: 14px;
+      .message {
+        font-family: "Droid Serif";
+      }
+  	  .last-commit {
+  	  	border-top: 1px solid #EAEAEA;
+  			padding: 15px;
+  			margin: 0;
+  	  }
+      .date {
+        font-family: "Droid Serif";
+        .today-badge {
+          font-size: 10px;
+          background: black;
+          color: white;
+          padding: 5px;
+          border-radius: 3px;
+        }
+      }
     }
 	}
 }
